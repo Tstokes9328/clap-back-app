@@ -1,28 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.title-container > p {
+    font-size: 45px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.input-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
 }
 
-.App-intro {
-  font-size: large;
+.input-box-container > h1 {
+    font-size: 20px;
+    color: darkgray;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.input-box-container > textarea {
+    border: 3px solid black;
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.copy-paste-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.copy-paste-container > h1 {
+    font-size: 20px;
+    color: darkgray;
+}
+
+.answer-box {
+    width: 90%;
+    height: 30vh;
+    border: 3px solid black;
+    font-size: 20px;
 }
